@@ -11,13 +11,23 @@
 
 <body>
     <h1><span id="tip-word">Tip</span> calculator</h1>
+    
     <div id="app">
-        <label>Bill Amount:</label><input type="number" id="bill-amount" v-model="amount"></br>
-        <label>Percentage Tip:</label><input type="number" id="percentage-tip" v-model="percentageTip"></br>
-        <label>Tip Amount:</label><input type="number" id="tip-amount" disabled :value="tipAmount"></br>
-        <label>Total:</label><input type="number" id="total" disabled :value="total"></br>
+        <label>Bill Amount:</label>
+        <input type="number" id="bill-amount" v-model="amount"></br>
+
+        <label>Percentage Tip:</label>
+        <input type="number" id="percentage-tip" v-model="percentageTip"></br>
+
+        <label>Tip Amount:</label>
+        <input type="number" id="tip-amount" disabled :value="tipAmount"></br>
+
+        <label>Total:</label>
+        <input type="number" id="total" disabled :value="total"></br>
+
         <button @click="calculateTip">Calculate</button>
     </div>
+
     <script type="module" src="app.js"></script>
 </body>
 </html>
