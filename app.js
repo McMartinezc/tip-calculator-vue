@@ -6,19 +6,19 @@ import{
 createApp({
     setup(){
 
-        const amount = ref("");
+        const billAmount = ref("");
         const percentageTip = ref("");
         const tipAmount = ref("");
         const total= ref("");
 
         const calculateTip = ()=>{
-            tipAmount.value = amount.value * (percentageTip.value / 100);
-            total.value = amount.value + tipAmount.value;
+            tipAmount.value = billAmount.value * (percentageTip.value / 100);
+            total.value = billAmount.value + tipAmount.value;
         }
 
 
         return{
-            amount,
+            billAmount,
             percentageTip,
             tipAmount,
             total,
